@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCalenderAccess", "GoogleCalenderAccess\GoogleCalenderAccess.csproj", "{0D2595F9-F270-454B-A948-C2F4901623D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{2383A408-87C9-4BB3-9BF4-CFB21E890654}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D2595F9-F270-454B-A948-C2F4901623D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2595F9-F270-454B-A948-C2F4901623D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2595F9-F270-454B-A948-C2F4901623D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2595F9-F270-454B-A948-C2F4901623D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2383A408-87C9-4BB3-9BF4-CFB21E890654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2383A408-87C9-4BB3-9BF4-CFB21E890654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2383A408-87C9-4BB3-9BF4-CFB21E890654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2383A408-87C9-4BB3-9BF4-CFB21E890654}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43A3E69B-D1C2-47F7-91A1-ED6DCB3C211A}
+	EndGlobalSection
+EndGlobal
