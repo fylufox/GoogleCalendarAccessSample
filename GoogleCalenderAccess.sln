@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCalenderAccess", "GoogleCalenderAccess\GoogleCalenderAccess.csproj", "{0D2595F9-F270-454B-A948-C2F4901623D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCalendarAccess", "GoogleCalenderAccess\GoogleCalendarAccess.csproj", "{0D2595F9-F270-454B-A948-C2F4901623D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{2383A408-87C9-4BB3-9BF4-CFB21E890654}"
 EndProject

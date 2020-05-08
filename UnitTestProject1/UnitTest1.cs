@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GoogleCalenderAccess;
+using GoogleCalendarAccess;
 using System;
 
 namespace UnitTestProject1

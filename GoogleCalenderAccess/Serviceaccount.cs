@@ -7,7 +7,7 @@ using Google.Apis.Calendar.v3.Data;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
 
-namespace GoogleCalenderAccess
+namespace GoogleCalendarAccess
 {
 
     public class Serviceaccount:GoogleCalendar

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GoogleCalenderAccess\GoogleCalenderAccess.csproj" />
+    <ProjectReference Include="..\GoogleCalenderAccess\GoogleCalendarAccess.csproj" />
   </ItemGroup>
 
   <ItemGroup>
