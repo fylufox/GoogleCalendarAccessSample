@@ -11,10 +11,10 @@ namespace GoogleCalendarAccess
 {
     abstract public class GoogleCalendar
     {
-        static protected string[] _scope = new string[1];
-        static protected CalendarService _service;
-        static protected string _cretifiation_path;   //json path
-        static protected string _application_name;  //Showed Apprication Name
+        protected string[] _scope = new string[1];
+        protected CalendarService _service;
+        protected string _cretifiation_path;   //json path
+        protected string _application_name;  //Showed Apprication Name
 
 
         public struct ReadingRequest
