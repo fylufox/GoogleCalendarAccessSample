@@ -46,6 +46,8 @@ The Myaccount and Serviceaccount classes inherit from the GoogleCalendar class.
   | start | datetime | start time |
   | end | datetime | end time |
   | color | string | Event color id | 
+  | description | string | Event description |
+  | location | string | Event location |
 - Calendarlist
   Calendar list Response.  
   | name | type | note |
