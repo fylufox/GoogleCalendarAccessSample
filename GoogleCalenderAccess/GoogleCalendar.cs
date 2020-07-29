@@ -6,6 +6,8 @@ using Google.Apis.Calendar.v3;
 using Google.Apis.Calendar.v3.Data;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
+using System.Resources;
+using System.Text.RegularExpressions;
 
 namespace GoogleCalendarAccess
 {
@@ -34,6 +36,8 @@ namespace GoogleCalendarAccess
             public DateTime start;
             public DateTime end;
             public string color;
+            public string description;
+            public string location;
         }
 
         public struct Calendarlist
@@ -119,6 +123,8 @@ namespace GoogleCalendarAccess
                 eventlist[i].summary = item.Summary;
                 eventlist[i].id = item.Id;
                 eventlist[i].color = item.ColorId;
+                eventlist[i].description = item.Description;
+                eventlist[i].location = item.Location;
                 //DateTime Consistency
                 if (item.Start.DateTime != null)
                 {
@@ -181,6 +187,11 @@ namespace GoogleCalendarAccess
             }
             insert.Start = start;
             insert.End = end;
+            insert.Description = add_item.description;
+            insert.Location = add_item.location;
+            Event.RemindersData remindersData = new Event.RemindersData();
+            remindersData.UseDefault = false;
+            insert.Reminders = null;
             add_item.id = _service.Events.Insert(insert, calendar_id).Execute().Id;
             return add_item;
         }
@@ -221,6 +232,8 @@ namespace GoogleCalendarAccess
                 apis_event.End.DateTime = new_event.end;
                 apis_event.End.Date = null;
             }
+            apis_event.Description = new_event.description;
+            apis_event.Location = new_event.location;
             _service.Events.Update(apis_event, calendar_id, event_id).Execute();
         }
 
@@ -256,5 +269,5 @@ namespace GoogleCalendarAccess
         }
     }
 
-    
+
 }

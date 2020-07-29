@@ -15,15 +15,16 @@ namespace UnitTestProject1
             request.calendar_id = "nndevelop1999@gmail.com";
             request.number_of_event = 10;
 
-            var c = sa_service.GetEventList(request);
-            foreach(var item in c)
+            var sa_list = sa_service.GetEventList(request);
+            foreach(var item in sa_list)
             {
                 Console.WriteLine(item.summary);
             }
 
             var auth_service = new Myaccount("calendarLibraryTest", Myaccount.Access.FULLACCSESS, "./Auth/OAuth.json");
-            c = auth_service.GetEventList(request);
-            foreach (var item in c)
+            //auth_service.ReAuthenticate();
+            var ma_list = auth_service.GetEventList(request);
+            foreach (var item in ma_list)
             {
                 Console.WriteLine(item.summary);
             }
